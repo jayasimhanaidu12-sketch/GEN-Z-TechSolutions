@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gen Z TS (Tech Solutions) - Empowering Farmers & Crop Waste Value Addition</title>
+  <meta name="description" content="Gen Z TS (Tech Solutions) connects buyers directly with farmers to increase farmer income and converts crop waste into biodegradable plates, fiber, clothes, bottles, and carry bags.">
+  
+  <!-- Google Fonts: Outfit & Inter for ultra modern typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-md">
+
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <div class="header-container">
+      
+      <!-- Brand Logo -->
+      <a href="#home" class="brand-logo" id="brandLogo">
+        <div class="brand-icon">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        </div>
+        <div class="brand-text">
+          <h1>Gen Z TS</h1>
+          <span data-i18n="brand_subtitle">Tech Solutions for Agriculture</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home" class="active" data-i18n="nav_home">Home</a></li>
+          <li><a href="#farmer-dashboard" data-i18n="nav_dashboard">Dashboard</a></li>
+          <li><a href="#marketplace" data-i18n="nav_marketplace">Buyer-Farmer Market</a></li>
+          <li><a href="#tools-calculators" data-i18n="nav_tools">Tools & Calculators</a></li>
+          <li><a href="#buyer-directory" data-i18n="nav_buyer_dir">Buyer Directory</a></li>
+          <li><a href="#sell-waste" data-i18n="nav_sell">Sell Your Waste</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Controls -->
+      <div class="header-actions">
+
+        <!-- Language Selector -->
+        <div class="lang-selector">
+          <select id="langSelect" aria-label="Select Language">
+            <option value="en">EN</option>
+            <option value="te">TE</option>
+            <option value="hi">HI</option>
+            <option value="ta">TA</option>
+            <option value="ml">ML</option>
+            <option value="kn">KN</option>
+          </select>
+        </div>
+        
+        <!-- Dark Mode Toggle -->
+        <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle Dark Mode">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="moon-icon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="sun-icon"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg>
+        </button>
+
+        <!-- Hamburger Button -->
+        <button id="hamburgerBtn" class="hamburger-btn" aria-label="Menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Overlay -->
+  <nav id="mobileNavOverlay" class="mobile-nav-overlay">
+    <ul class="mobile-nav-links">
+      <li><a href="#home" data-i18n="nav_home">Home</a></li>
+      <li><a href="#farmer-dashboard" data-i18n="nav_dashboard">Dashboard</a></li>
+      <li><a href="#marketplace" data-i18n="nav_marketplace">Buyer-Farmer Market</a></li>
+      <li><a href="#tools-calculators" data-i18n="nav_tools">Tools & Calculators</a></li>
+      <li><a href="#buyer-directory" data-i18n="nav_buyer_dir">Buyer Directory</a></li>
+      <li><a href="#waste-products" data-i18n="nav_waste_products">Waste Products</a></li>
+      <li><a href="#sell-waste" data-i18n="nav_sell">Sell Waste</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Website Content Wrapper -->
+  <div id="mainSiteContent">
+
+  <!-- Main Hero Section -->
+  <section id="home" class="hero-section">
+    <img src="assets/hero_farm_sunrise.jpg" alt="Sunrise over paddy fields" class="hero-bg-img"/>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge" data-i18n="hero_badge">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        Direct Farmer Marketplace & Waste Recycling
+      </div>
+      
+      <h1 class="hero-title" data-i18n="hero_title">Gen Z TS(Tech Solutions)</h1>
+      
+      <p class="hero-tagline" data-i18n="hero_tagline">
+        the platform that will more helpful to the farmers and turning crop waste into the usefull products.
+      </p>
+
+      <!-- Intro Paragraphs -->
+      <div class="intro-paragraphs-wrapper">
+        <p class="intro-paragraph" data-i18n="intro_para_1">
+          Our platform empowers farmers to increase income by directly connecting them with buyers. We bridge the gap between agricultural producers and markets, ensuring fair prices and transparent transactions.
+        </p>
+        <p class="intro-paragraph" data-i18n="intro_para_2">
+          We also promote sustainable practices by turning crop waste into valuable products like eco‑friendly plates, fabrics, and bags, creating a circular economy for rural communities.
+        </p>
+      </div>
+
+      <div class="hero-ctas">
+        <a href="#marketplace" class="btn btn-primary" data-i18n="btn_marketplace">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          Explore Produce Marketplace
+        </a>
+        <a href="#recyclers-directory" class="btn btn-accent" data-i18n="btn_recyclers">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+          Connect with Waste Recyclers
+        </a>
+        <a href="#sell-waste" class="btn btn-outline" data-i18n="btn_sell_waste">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          Sell Crop Waste
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ MOTTO BANNER ═══════════════ -->
+  <section id="motto" class="motto-section">
+    <div class="motto-container">
+      <div class="motto-leaf motto-leaf-left">
+        <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M11 20A7 7 0 0 1 9.8 6.9C15.5 4.9 17 3.5 17 3.5s1.2 8.6-4.5 12.7"/><path d="M11.7 12.5c.4-1.6 1.6-2.8 3.2-3.4"/></svg>
+      </div>
+      <p class="motto-text" id="mottoText">
+        "Let Us Build a Nation Free from Pollution by Replacing Harmful Plastic with Sustainable, Biodegradable Products—Protecting Our Environment Today, Preserving Our Planet Tomorrow, and Creating a Cleaner, Greener, and Healthier Future for Generations to Come."
+      </p>
+      <div class="motto-attribution">— Gen Z TS (Tech Solutions)</div>
+      <div class="motto-leaf motto-leaf-right">
+        <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M11 20A7 7 0 0 1 9.8 6.9C15.5 4.9 17 3.5 17 3.5s1.2 8.6-4.5 12.7"/><path d="M11.7 12.5c.4-1.6 1.6-2.8 3.2-3.4"/></svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact Statistics Bar -->
+  <section class="impact-bar reveal">
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-number" data-count="25">0</div>
+        <div class="stat-label" data-i18n="stat_companies">Verified AP & TS Recyclers</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" data-count="15000" data-prefix="₹" data-suffix="+">0</div>
+        <div class="stat-label" data-i18n="stat_income">Extra Revenue / Acre</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" data-count="0" data-suffix="%">0</div>
+        <div class="stat-label" data-i18n="stat_middlemen">Middleman Commission</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" data-count="6">0</div>
+        <div class="stat-label" data-i18n="stat_languages">Languages Supported</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FARMER DASHBOARD ═══════════════ -->
+  <section id="farmer-dashboard" class="section reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Farmer Dashboard</span>
+        <h2 class="section-title">Your Farm at a Glance</h2>
+        <p class="section-subtitle">Track your waste listings, income, carbon savings, and buyer connections all in one place.</p>
+      </div>
+      <div class="dashboard-grid">
+        <div class="dash-card dash-card-green reveal reveal-delay-1">
+          <div class="dash-icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <div class="dash-value" id="dashIncome">₹45,000</div>
+          <div class="dash-label">Total Income Earned</div>
+          <div class="dash-trend dash-trend-up">↑ 12% this season</div>
+        </div>
+        <div class="dash-card dash-card-gold reveal reveal-delay-2">
+          <div class="dash-icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+          </div>
+          <div class="dash-value" id="dashListings">8</div>
+          <div class="dash-label">Active Waste Listings</div>
+          <div class="dash-trend">3 pending bids</div>
+        </div>
+        <div class="dash-card dash-card-blue reveal reveal-delay-3">
+          <div class="dash-icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12l2 2 4-4"/></svg>
+          </div>
+          <div class="dash-value" id="dashBuyers">14</div>
+          <div class="dash-label">Verified Buyers Connected</div>
+          <div class="dash-trend dash-trend-up">↑ 5 new this month</div>
+        </div>
+        <div class="dash-card dash-card-emerald reveal reveal-delay-4">
+          <div class="dash-icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 22 L6 12 L10 16 L14 6 L18 14 L22 2"/></svg>
+          </div>
+          <div class="dash-value" id="dashCarbon">2.4 Tons</div>
+          <div class="dash-label">CO₂ Emissions Saved</div>
+          <div class="dash-trend dash-trend-up">↑ Equivalent to 120 trees</div>
+        </div>
+        <div class="dash-card dash-card-orange reveal reveal-delay-1">
+          <div class="dash-icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h2a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H6"/><circle cx="8" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></svg>
+          </div>
+          <div class="dash-value" id="dashPickups">3</div>
+          <div class="dash-label">Pickups Scheduled</div>
+          <div class="dash-trend">Next: Tomorrow</div>
+        </div>
+        <div class="dash-card dash-card-purple reveal reveal-delay-2">
+          <div class="dash-icon">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="dash-value">
+            <span class="verified-badge-inline">✓ Verified</span>
+          </div>
+          <div class="dash-label">Farmer Trust Score</div>
+          <div class="dash-trend dash-trend-up">Gold Tier Seller</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section id="how-it-works" class="how-it-works reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="section_hiw_tag">How It Works</span>
+        <h2 class="section-title" data-i18n="section_hiw_title">Start Earning More in 4 Simple Steps</h2>
+        <p class="section-subtitle" data-i18n="section_hiw_desc">Whether you want to sell produce directly or monetize crop waste, our platform makes it simple and transparent.</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card reveal reveal-delay-1">
+          <div class="step-number">1</div>
+          <h3 class="step-title" data-i18n="step_1_title">Register Your Produce</h3>
+          <p class="step-desc" data-i18n="step_1_desc">Sign up and list your harvest produce or available crop waste. It takes less than 2 minutes.</p>
+        </div>
+        <div class="step-card reveal reveal-delay-2">
+          <div class="step-number">2</div>
+          <h3 class="step-title" data-i18n="step_2_title">Get Matched Instantly</h3>
+          <p class="step-desc" data-i18n="step_2_desc">Our system connects you with verified buyers and recycling companies in Andhra Pradesh and South India.</p>
+        </div>
+        <div class="step-card reveal reveal-delay-3">
+          <div class="step-number">3</div>
+          <h3 class="step-title" data-i18n="step_3_title">Negotiate Directly</h3>
+          <p class="step-desc" data-i18n="step_3_desc">Talk directly with buyers — no middlemen, no hidden fees, no commission cuts from your hard-earned income.</p>
+        </div>
+        <div class="step-card reveal reveal-delay-4">
+          <div class="step-number">4</div>
+          <h3 class="step-title" data-i18n="step_4_title">Earn Sustainably</h3>
+          <p class="step-desc" data-i18n="step_4_desc">Receive fair payment for your produce and generate secondary income by selling crop waste to eco-product manufacturers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Direct Buyer-Farmer Marketplace Section -->
+  <section id="marketplace" class="section section-alt reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="section_market_tag">Direct Produce Trade</span>
+        <h2 class="section-title" data-i18n="section_market_title">Connecting Buyers Directly with Farmers</h2>
+        <p class="section-subtitle" data-i18n="section_market_desc">
+          Empowering farmers to maximize their income by eliminating middleman commissions and selling fresh paddy, corn, and produce directly.
+        </p>
+      </div>
+
+      <!-- Search Buyers -->
+      <div class="filter-bar" style="margin-bottom: 2rem;">
+        <div class="search-box">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" id="produceSearch" placeholder="Search buyers, crops, districts..." data-i18n="search_produce_ph">
+        </div>
+        <div class="filter-group">
+          <select class="filter-select" id="cropTypeFilter">
+            <option value="">All Crop Types</option>
+            <option value="Paddy">Paddy</option>
+            <option value="Corn">Corn</option>
+            <option value="Sugarcane">Sugarcane</option>
+            <option value="Pulses">Pulses</option>
+            <option value="Spices">Spices</option>
+            <option value="Cotton">Cotton</option>
+            <option value="Nuts">Nuts</option>
+            <option value="Fruits">Fruits</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="produceGrid" class="marketplace-grid">
+        <!-- Millet Produce Card -->
+        <div class="product-card reveal reveal-delay-1">
+          <img src="assets/marketplace_millet.jpg" alt="Millet Grains" class="product-img"/>
+          <h3 class="product-title" data-i18n="product_millet">Millet</h3>
+          <p class="product-desc" data-i18n="desc_millet">Nutritious millet grains, ideal for health‑conscious buyers.</p>
+          <button class="btn btn-primary btn-sm" data-i18n="btn_buy_millet">Buy Millet</button>
+        </div>
+        <!-- Dynamic Marketplace Produce Cards Injected via app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ BUYER & STARTUP DIRECTORY ═══════════════ -->
+  <section id="buyer-directory" class="section reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Buyer & Startup Directory</span>
+        <h2 class="section-title">Find Verified Buyers & Startups</h2>
+        <p class="section-subtitle">Search and connect with trusted buyers, eco-startups, and recycling enterprises across India.</p>
+      </div>
+      <div class="filter-bar">
+        <div class="search-box">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" id="buyerSearch" placeholder="Search buyer name, location, or product interest...">
+        </div>
+        <div class="filter-group">
+          <select class="filter-select" id="buyerTypeFilter">
+            <option value="">All Buyer Types</option>
+            <option value="Corporate">Corporate Buyer</option>
+            <option value="Startup">Eco Startup</option>
+            <option value="Recycler">Recycling Unit</option>
+            <option value="Exporter">Exporter</option>
+          </select>
+          <select class="filter-select" id="buyerLocationFilter">
+            <option value="">All Locations</option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Karnataka">Karnataka</option>
+          </select>
+        </div>
+      </div>
+      <div id="buyerDirectoryGrid" class="directory-grid">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ NEARBY BUYER FINDER ═══════════════ -->
+  <section id="nearby-buyer" class="section section-alt reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Nearby Buyer Finder</span>
+        <h2 class="section-title">Find Buyers Near You</h2>
+        <p class="section-subtitle">Enter your pincode or district to discover the closest waste buyers and recyclers.</p>
+      </div>
+      <div class="nearby-finder-wrapper">
+        <div class="nearby-search-card">
+          <div class="form-grid" style="grid-template-columns: 1fr 1fr auto;">
+            <div class="form-group">
+              <label for="nearbyPincode">Pincode / ZIP</label>
+              <input type="text" id="nearbyPincode" placeholder="e.g. 522601">
+            </div>
+            <div class="form-group">
+              <label for="nearbyDistrict">District</label>
+              <select id="nearbyDistrict">
+                <option value="">Select District</option>
+                <option value="Guntur">Guntur</option>
+                <option value="Palnadu">Palnadu</option>
+                <option value="East Godavari">East Godavari</option>
+                <option value="Visakhapatnam">Visakhapatnam</option>
+                <option value="Kurnool">Kurnool</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Warangal">Warangal</option>
+                <option value="Nizamabad">Nizamabad</option>
+                <option value="Khammam">Khammam</option>
+                <option value="Karimnagar">Karimnagar</option>
+              </select>
+            </div>
+            <button class="btn btn-primary" id="nearbySearchBtn" style="align-self: end;">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              Find Buyers
+            </button>
+          </div>
+        </div>
+        <div id="nearbyResults" class="nearby-results-grid">
+          <!-- Rendered dynamically -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ TOOLS & CALCULATORS HUB ═══════════════ -->
+  <section id="tools-calculators" class="section reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Smart Tools & Calculators</span>
+        <h2 class="section-title">AI-Powered Farming Tools</h2>
+        <p class="section-subtitle">Use our intelligent calculators and tools to maximize your income and minimize environmental impact.</p>
+      </div>
+
+      <!-- Tool Tabs -->
+      <div class="tool-tabs" id="toolTabs">
+        <button class="tool-tab active" data-tool="waste-income"><i data-feather="dollar-sign" style="width: 1em; height: 1em; vertical-align: middle;"></i> Waste-to-Income</button>
+        <button class="tool-tab" data-tool="crop-waste"><i data-feather="wind" style="width: 1em; height: 1em; vertical-align: middle;"></i> Crop Waste Calculator</button>
+        <button class="tool-tab" data-tool="pollution"><i data-feather="truck" style="width: 1em; height: 1em; vertical-align: middle;"></i> Pollution Impact</button>
+        <button class="tool-tab" data-tool="carbon"><i data-feather="globe" style="width: 1em; height: 1em; vertical-align: middle;"></i> Carbon Tracker</button>
+        <button class="tool-tab" data-tool="burn-vs-sell"><i data-feather="bar-chart-2" style="width: 1em; height: 1em; vertical-align: middle;"></i> Burn vs Sell</button>
+        <button class="tool-tab" data-tool="waste-advisor"><i data-feather="cpu" style="width: 1em; height: 1em; vertical-align: middle;"></i> AI Waste Advisor</button>
+        <button class="tool-tab" data-tool="waste-identify"><i data-feather="camera" style="width: 1em; height: 1em; vertical-align: middle;"></i> AI Waste ID</button>
+      </div>
+
+      <!-- Tool Panels -->
+      <div class="tool-panels">
+
+        <!-- Waste-to-Income Calculator -->
+        <div class="tool-panel active" id="panel-waste-income">
+          <div class="tool-panel-inner">
+            <div class="tool-form-side">
+              <h3>Waste-to-Income Calculator</h3>
+              <p>Estimate how much additional income you can earn by selling your crop waste.</p>
+              <div class="form-group">
+                <label for="incCropType">Crop Type</label>
+                <select id="incCropType">
+                  <option value="paddy">Paddy / Rice</option>
+                  <option value="corn">Corn / Maize</option>
+                  <option value="sugarcane">Sugarcane</option>
+                  <option value="cotton">Cotton</option>
+                  <option value="groundnut">Groundnut</option>
+                  <option value="wheat">Wheat</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="incAcres">Land Area (Acres)</label>
+                <input type="number" id="incAcres" placeholder="e.g. 5" min="0.5" step="0.5">
+              </div>
+              <div class="form-group">
+                <label for="incYield">Yield per Acre (Quintals)</label>
+                <input type="number" id="incYield" placeholder="e.g. 25" min="1">
+              </div>
+              <button class="btn btn-primary" id="calcIncomeBtn">Calculate Income</button>
+            </div>
+            <div class="tool-result-side" id="incomeResult">
+              <div class="result-placeholder">
+                <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                <p>Fill the form and click Calculate to see your estimated income.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Crop Waste Calculator -->
+        <div class="tool-panel" id="panel-crop-waste">
+          <div class="tool-panel-inner">
+            <div class="tool-form-side">
+              <h3>Crop Waste Calculator</h3>
+              <p>Estimate the amount of waste generated from your harvest.</p>
+              <div class="form-group">
+                <label for="cwCropType">Crop Type</label>
+                <select id="cwCropType">
+                  <option value="paddy">Paddy / Rice</option>
+                  <option value="corn">Corn / Maize</option>
+                  <option value="sugarcane">Sugarcane</option>
+                  <option value="cotton">Cotton</option>
+                  <option value="groundnut">Groundnut</option>
+                  <option value="wheat">Wheat</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="cwAcres">Land Area (Acres)</label>
+                <input type="number" id="cwAcres" placeholder="e.g. 5" min="0.5" step="0.5">
+              </div>
+              <button class="btn btn-primary" id="calcWasteBtn">Calculate Waste</button>
+            </div>
+            <div class="tool-result-side" id="wasteResult">
+              <div class="result-placeholder">
+                <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                <p>Select your crop and enter land area to see waste estimates.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pollution Impact Calculator -->
+        <div class="tool-panel" id="panel-pollution">
+          <div class="tool-panel-inner">
+            <div class="tool-form-side">
+              <h3>Pollution Impact Calculator</h3>
+              <p>See the environmental damage caused by burning crop waste.</p>
+              <div class="form-group">
+                <label for="pollTons">Tons of Waste Burned</label>
+                <input type="number" id="pollTons" placeholder="e.g. 10" min="0.5" step="0.5">
+              </div>
+              <div class="form-group">
+                <label for="pollWasteType">Waste Type</label>
+                <select id="pollWasteType">
+                  <option value="paddy_straw">Paddy Straw</option>
+                  <option value="corn_stalk">Corn Stalks</option>
+                  <option value="sugarcane_bagasse">Sugarcane Bagasse</option>
+                  <option value="cotton_stalk">Cotton Stalks</option>
+                </select>
+              </div>
+              <button class="btn btn-primary" id="calcPollutionBtn">Calculate Impact</button>
+            </div>
+            <div class="tool-result-side" id="pollutionResult">
+              <div class="result-placeholder">
+                <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v6l4 2"/></svg>
+                <p>Enter tons burned to see CO₂, PM2.5, and health impact data.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carbon Footprint Tracker -->
+        <div class="tool-panel" id="panel-carbon">
+          <div class="tool-panel-inner" style="flex-direction: column; align-items: center; text-align: center;">
+            <h3>Carbon Footprint Tracker</h3>
+            <p style="max-width:600px;">Track how much CO₂ you've saved by selling crop waste instead of burning it.</p>
+            <div class="carbon-tracker-display">
+              <div class="carbon-ring-container">
+                <svg class="carbon-ring" viewBox="0 0 140 140">
+                  <circle class="carbon-ring-bg" cx="70" cy="70" r="60"/>
+                  <circle class="carbon-ring-fill" cx="70" cy="70" r="60" id="carbonRingFill" style="stroke-dashoffset: 200;"/>
+                </svg>
+                <div class="carbon-ring-label">
+                  <span class="carbon-value" id="carbonValue">2.4</span>
+                  <span class="carbon-unit">Tons CO₂ Saved</span>
+                </div>
+              </div>
+              <div class="carbon-equivalents">
+                <div class="carbon-eq-card">
+                  <div class="carbon-eq-value" id="treesEquiv">120</div>
+                  <div class="carbon-eq-label">Trees Planted Equivalent</div>
+                </div>
+                <div class="carbon-eq-card">
+                  <div class="carbon-eq-value" id="carsEquiv">0.5</div>
+                  <div class="carbon-eq-label">Cars Off Road (1 Year)</div>
+                </div>
+                <div class="carbon-eq-card">
+                  <div class="carbon-eq-value" id="flightsEquiv">3</div>
+                  <div class="carbon-eq-label">Domestic Flights Saved</div>
+                </div>
+              </div>
+            </div>
+            <div class="carbon-add-form" style="margin-top:1.5rem;">
+              <div class="form-group" style="display:inline-flex; gap:0.75rem; align-items:end;">
+                <div>
+                  <label for="addCarbonTons">Add Waste Sold (Tons)</label>
+                  <input type="number" id="addCarbonTons" placeholder="e.g. 2" min="0.1" step="0.1" style="width:140px;">
+                </div>
+                <button class="btn btn-primary btn-sm" id="addCarbonBtn">+ Add to Tracker</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Burn vs Sell Comparison -->
+        <div class="tool-panel" id="panel-burn-vs-sell">
+          <div class="tool-panel-inner" style="flex-direction:column;">
+            <h3 style="text-align:center;">Waste Burning vs. Selling Comparison</h3>
+            <p style="text-align:center; max-width:600px; margin: 0 auto 1.5rem;">See the stark difference between burning your crop waste and selling it.</p>
+            <div class="form-group" style="max-width:300px; margin:0 auto 1.5rem;">
+              <label for="bvsTons">Enter Tons of Waste</label>
+              <input type="number" id="bvsTons" placeholder="e.g. 5" min="0.5" step="0.5">
+            </div>
+            <button class="btn btn-primary btn-sm" id="bvsCalcBtn" style="margin:0 auto 2rem;">Compare</button>
+            <div class="bvs-comparison" id="bvsResult">
+              <div class="bvs-card bvs-burn">
+                <div class="bvs-emoji"><i data-feather="trending-up" style="width: 1em; height: 1em; vertical-align: middle;"></i></div>
+                <h4>If You Burn</h4>
+                <ul class="bvs-list">
+                  <li><span class="bvs-metric">Income:</span> <span class="bvs-val bvs-bad" id="bvsBurnIncome">₹0</span></li>
+                  <li><span class="bvs-metric">CO₂ Released:</span> <span class="bvs-val bvs-bad" id="bvsBurnCO2">—</span></li>
+                  <li><span class="bvs-metric">PM2.5 Released:</span> <span class="bvs-val bvs-bad" id="bvsBurnPM">—</span></li>
+                  <li><span class="bvs-metric">Health Impact:</span> <span class="bvs-val bvs-bad" id="bvsBurnHealth">—</span></li>
+                  <li><span class="bvs-metric">Soil Nutrients:</span> <span class="bvs-val bvs-bad">Destroyed</span></li>
+                </ul>
+              </div>
+              <div class="bvs-vs">VS</div>
+              <div class="bvs-card bvs-sell">
+                <div class="bvs-emoji"><i data-feather="dollar-sign" style="width: 1em; height: 1em; vertical-align: middle;"></i></div>
+                <h4>If You Sell</h4>
+                <ul class="bvs-list">
+                  <li><span class="bvs-metric">Income:</span> <span class="bvs-val bvs-good" id="bvsSellIncome">—</span></li>
+                  <li><span class="bvs-metric">CO₂ Saved:</span> <span class="bvs-val bvs-good" id="bvsSellCO2">—</span></li>
+                  <li><span class="bvs-metric">Products Made:</span> <span class="bvs-val bvs-good" id="bvsSellProducts">—</span></li>
+                  <li><span class="bvs-metric">Health Impact:</span> <span class="bvs-val bvs-good">None</span></li>
+                  <li><span class="bvs-metric">Soil Nutrients:</span> <span class="bvs-val bvs-good">Preserved</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI Waste Advisor -->
+        <div class="tool-panel" id="panel-waste-advisor">
+          <div class="tool-panel-inner">
+            <div class="tool-form-side">
+              <h3><i data-feather="cpu" style="width: 1em; height: 1em; vertical-align: middle;"></i> AI Waste Advisor</h3>
+              <p>Tell us about your crop waste — our AI recommends the best way to monetize it.</p>
+              <div class="form-group">
+                <label for="advisorWasteType">What waste do you have?</label>
+                <select id="advisorWasteType">
+                  <option value="paddy_husk">Paddy Husk & Straw</option>
+                  <option value="corn_stalk">Corn Stalks & Cobs</option>
+                  <option value="sugarcane_bagasse">Sugarcane Bagasse</option>
+                  <option value="cotton_stalk">Cotton Stalks</option>
+                  <option value="areca_sheath">Areca Palm Sheaths</option>
+                  <option value="groundnut_shell">Groundnut Shells</option>
+                  <option value="banana_fiber">Banana Stem / Fiber</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="advisorQuantity">Approximate Quantity (Tons)</label>
+                <input type="number" id="advisorQuantity" placeholder="e.g. 5" min="0.5" step="0.5">
+              </div>
+              <button class="btn btn-primary" id="getAdviceBtn">Get AI Advice</button>
+            </div>
+            <div class="tool-result-side" id="advisorResult">
+              <div class="result-placeholder">
+                <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>
+                <p>Select your waste type and quantity to get personalized recommendations.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI Waste Identification from Images -->
+        <div class="tool-panel" id="panel-waste-identify">
+          <div class="tool-panel-inner" style="flex-direction:column; align-items:center;">
+            <h3><i data-feather="camera" style="width: 1em; height: 1em; vertical-align: middle;"></i> AI Waste Identification from Images</h3>
+            <p style="max-width:600px; text-align:center;">Upload or drag-and-drop a photo of your crop waste. Our AI will identify the type and suggest the best use.</p>
+            <div class="image-drop-zone" id="imageDropZone">
+              <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <p>Drag & drop an image here<br><span style="font-size:0.85rem; color:var(--text-muted);">or click to browse</span></p>
+              <input type="file" id="wasteImageInput" accept="image/*" style="display:none;">
+            </div>
+            <div id="imagePreviewArea" style="display:none; margin-top:1rem; text-align:center;">
+              <img id="wasteImagePreview" alt="Uploaded waste" style="max-width:300px; max-height:200px; border-radius:var(--border-radius-md); border:2px solid var(--border-light);">
+            </div>
+            <div id="wasteIdResult" class="waste-id-result" style="display:none;">
+              <!-- Filled dynamically -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ WASTE-TO-PRODUCT RECOMMENDATIONS ═══════════════ -->
+  <section id="waste-products-rec" class="section section-alt reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Waste-to-Product Recommendations</span>
+        <h2 class="section-title">What Can Be Made From Your Waste?</h2>
+        <p class="section-subtitle">Select your waste type and see all the eco-friendly products that can be manufactured from it.</p>
+      </div>
+      <div class="waste-rec-selector">
+        <button class="waste-rec-btn active" data-waste="paddy_husk"><i data-feather="wind" style="width: 1em; height: 1em; vertical-align: middle;"></i> Paddy Husk</button>
+        <button class="waste-rec-btn" data-waste="corn_stalk"><i data-feather="sun" style="width: 1em; height: 1em; vertical-align: middle;"></i> Corn Stalks</button>
+        <button class="waste-rec-btn" data-waste="sugarcane"><i data-feather="align-justify" style="width: 1em; height: 1em; vertical-align: middle;"></i> Sugarcane Bagasse</button>
+        <button class="waste-rec-btn" data-waste="cotton"><i data-feather="circle" style="width: 1em; height: 1em; vertical-align: middle;"></i> Cotton Stalks</button>
+        <button class="waste-rec-btn" data-waste="areca"><i data-feather="sun" style="width: 1em; height: 1em; vertical-align: middle;"></i> Areca Sheaths</button>
+        <button class="waste-rec-btn" data-waste="banana"><i data-feather="smile" style="width: 1em; height: 1em; vertical-align: middle;"></i> Banana Fiber</button>
+      </div>
+      <div id="wasteRecGrid" class="waste-rec-grid">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ AGRICULTURAL WASTE MARKETPLACE & BIDDING ═══════════════ -->
+  <section id="waste-marketplace" class="section reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Agricultural Waste Marketplace</span>
+        <h2 class="section-title">Waste Listing & Bidding System</h2>
+        <p class="section-subtitle">Farmers list their crop waste, verified buyers place bids. Get the best price for your agricultural residue.</p>
+      </div>
+      <div id="wasteMarketGrid" class="waste-market-grid">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ MARKET PRICE & DEMAND INSIGHTS ═══════════════ -->
+  <section id="market-insights" class="section section-alt reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Market Price & Demand Insights</span>
+        <h2 class="section-title">Live Waste Market Prices</h2>
+        <p class="section-subtitle">Real-time market prices and demand trends for agricultural waste across AP & Telangana.</p>
+      </div>
+      <div class="price-chart-container">
+        <div class="price-chart" id="priceChart">
+          <!-- Rendered dynamically as CSS bar chart -->
+        </div>
+        <div class="price-legend">
+          <span class="legend-item"><span class="legend-dot" style="background:#15803D;"></span> Current Price (₹/Ton)</span>
+          <span class="legend-item"><span class="legend-dot" style="background:#A16207;"></span> Demand Level</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ BIODEGRADABLE PRODUCT HUB ═══════════════ -->
+  <section id="biodegradable-hub" class="section reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Biodegradable Product Hub</span>
+        <h2 class="section-title">Sustainable Alternatives to Plastic</h2>
+        <p class="section-subtitle">Explore eco-friendly products made from agricultural waste — replacing harmful plastic one product at a time.</p>
+      </div>
+      <div class="bio-hub-grid" id="bioHubGrid">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Farmer Testimonials Section (Social Proof) -->
+  <section id="testimonials" class="testimonials-section reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="section_testimonials_tag">Farmer Stories</span>
+        <h2 class="section-title" data-i18n="section_testimonials_title">What Our Farmers Say</h2>
+        <p class="section-subtitle" data-i18n="section_testimonials_desc">Real stories from real farmers who have increased their income through Gen Z TS.</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal reveal-delay-1">
+          <p class="testimonial-quote" data-i18n="testimonial_1_quote">"Before Gen Z TS, I had to sell my paddy to middlemen at low prices. Now I sell directly to buyers in Hyderabad and earn ₹400 more per quintal. This platform changed my life."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">R</div>
+            <div>
+              <div class="testimonial-name" data-i18n="testimonial_1_name">Rambabu Naidu</div>
+              <div class="testimonial-role" data-i18n="testimonial_1_role">Paddy Farmer, East Godavari</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-2">
+          <p class="testimonial-quote" data-i18n="testimonial_2_quote">"I used to burn my rice husk every season. Now I sell it to Agriware India and earn ₹15,000 extra per acre. My crop waste is now a source of income!"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">L</div>
+            <div>
+              <div class="testimonial-name" data-i18n="testimonial_2_name">Lakshmi Devi</div>
+              <div class="testimonial-role" data-i18n="testimonial_2_role">Rice Farmer, Palnadu</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-3">
+          <p class="testimonial-quote" data-i18n="testimonial_3_quote">"The language support in Telugu makes it so easy. I registered my corn waste in 2 minutes and got a call from a recycling company the same week. Very useful platform."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">V</div>
+            <div>
+              <div class="testimonial-name" data-i18n="testimonial_3_name">Venkatesh Reddy</div>
+              <div class="testimonial-role" data-i18n="testimonial_3_role">Corn Farmer, Guntur</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Crop Waste Products Section -->
+  <section id="waste-products" class="section reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="section_waste_tag">Waste to Wealth Innovations</span>
+        <h2 class="section-title" data-i18n="section_waste_title">Turning Crop Waste into Useful Eco-Products</h2>
+        <p class="section-subtitle" data-i18n="section_waste_desc">
+          Converting agricultural post-harvest residue (Paddy Husk, Straw, Corn Stalks, Areca Sheath) into high-value eco tableware, biodegradable bags, fiber, and bottles.
+        </p>
+      </div>
+      <div class="waste-showcase-grid">
+        <div class="showcase-card reveal reveal-delay-1">
+          <div class="showcase-img-wrapper">
+            <img src="assets/eco_coffee_cup.jpg" alt="Eco Coffee Cup" class="showcase-img" onerror="this.src='assets/eco_plates_tableware_1789230961166.jpg'"/>
+            <span class="showcase-badge">Coffee Cup</span>
+          </div>
+          <div class="showcase-body">
+            <h3 class="showcase-title">Biodegradable Coffee Cup</h3>
+            <p class="showcase-desc">Elegant coffee cup made from rice husk, compostable within weeks.</p>
+            <div class="waste-inputs-list"><span class="waste-pill">Rice Husk</span></div>
+            <a href="#recyclers-directory" class="btn btn-outline-green btn-sm">View AP Manufacturers →</a>
+          </div>
+        </div>
+        <div class="showcase-card reveal reveal-delay-2">
+          <div class="showcase-img-wrapper">
+            <img src="assets/eco_plates_tableware_1789230961166.jpg" alt="Biodegradable Eco Plates & Tableware" class="showcase-img">
+            <span class="showcase-badge">Rice Husk & Areca</span>
+          </div>
+          <div class="showcase-body">
+            <h3 class="showcase-title">Biodegradable Plates, Bowls & Cutlery</h3>
+            <p class="showcase-desc">100% natural tableware produced directly from paddy husk, rice bran, and natural plant fibers.</p>
+            <div class="waste-inputs-list">
+              <span class="waste-pill">Paddy Husk</span>
+              <span class="waste-pill">Rice Bran</span>
+              <span class="waste-pill">Areca Sheath</span>
+            </div>
+            <a href="#recyclers-directory" class="btn btn-outline-green btn-sm">View AP Manufacturers →</a>
+          </div>
+        </div>
+        <div class="showcase-card reveal reveal-delay-3">
+          <div class="showcase-img-wrapper">
+            <img src="assets/compostable_bags_packaging_1789231012217.jpg" alt="Plant-Based Compostable Carry Bags" class="showcase-img">
+            <span class="showcase-badge">Corn Starch & PLA</span>
+          </div>
+          <div class="showcase-body">
+            <h3 class="showcase-title">Compostable Carry Bags, Pouches & Films</h3>
+            <p class="showcase-desc">Plant-based bio-plastic carry bags manufactured from corn starch, vegetable starch, and PLA.</p>
+            <div class="waste-inputs-list">
+              <span class="waste-pill">Corn Starch</span>
+              <span class="waste-pill">Crop Biopolymers</span>
+              <span class="waste-pill">Vegetable Starch</span>
+            </div>
+            <a href="#recyclers-directory" class="btn btn-outline-green btn-sm">View AP Manufacturers →</a>
+          </div>
+        </div>
+        <div class="showcase-card reveal reveal-delay-4">
+          <div class="showcase-img-wrapper">
+            <img src="assets/eco_fabric_1789231748611.jpg" alt="Agricultural Waste Fiber and Bio Bottles" class="showcase-img">
+            <span class="showcase-badge">Crop Straw & Bagasse</span>
+          </div>
+          <div class="showcase-body">
+            <h3 class="showcase-title">Crop Fiber Clothes, Bio-Bottles & Mulch Films</h3>
+            <p class="showcase-desc">Innovations converting sugarcane bagasse, paddy straw, and banana fiber into durable textile yarns and eco-friendly water bottles.</p>
+            <div class="waste-inputs-list">
+              <span class="waste-pill">Sugarcane Fiber</span>
+              <span class="waste-pill">Straw Fiber</span>
+              <span class="waste-pill">Mulch Films</span>
+            </div>
+            <a href="#recyclers-directory" class="btn btn-outline-green btn-sm">View AP Manufacturers →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PDF Verified Companies Directory Section -->
+  <section id="recyclers-directory" class="section section-alt reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="section_directory_tag">Andhra Pradesh Enterprise Directory</span>
+        <h2 class="section-title" data-i18n="nav_directory">AP & TS Enterprise Directory</h2>
+        <p class="section-subtitle">25+ Verified Companies Converting Agricultural Waste to Useful Products in Andhra Pradesh and Telangana</p>
+      </div>
+      
+      <!-- Google Maps Placeholder -->
+      <div class="map-container">
+        <div class="map-placeholder">
+          <div class="map-overlay">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <p>25+ Recyclers Across AP & TS</p>
+            <span class="map-hint">Interactive Map View</span>
+          </div>
+          <img src="assets/company_building_1789231732603.jpg" alt="Map View" class="map-bg-image" style="opacity: 0.3; width: 100%; height: 100%; object-fit: cover;">
+        </div>
+      </div>
+
+      <div class="filter-bar">
+        <div class="search-box">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" id="recyclerSearch" placeholder="Search company name, district, or product..." data-i18n="search_recyclers_ph">
+        </div>
+      </div>
+
+      <div id="recyclersGrid" class="directory-grid">
+        <!-- Injected dynamically via app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ WASTE COLLECTION & PICKUP ═══════════════ -->
+  <section id="waste-pickup" class="section reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Waste Collection & Pickup</span>
+        <h2 class="section-title">Schedule a Waste Pickup</h2>
+        <p class="section-subtitle">Request a pickup for your crop waste. Our partnered logistics will collect it from your farm gate.</p>
+      </div>
+      <div class="form-card">
+        <form id="pickupForm">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="pickupName">Your Name</label>
+              <input type="text" id="pickupName" placeholder="e.g. Venkatrao" required>
+            </div>
+            <div class="form-group">
+              <label for="pickupPhone">Phone Number</label>
+              <input type="tel" id="pickupPhone" placeholder="+91 98765 43210" required>
+            </div>
+            <div class="form-group">
+              <label for="pickupAddress">Farm Address / Village</label>
+              <input type="text" id="pickupAddress" placeholder="e.g. Kakani Village, Narasaraopet" required>
+            </div>
+            <div class="form-group">
+              <label for="pickupWasteType">Waste Type</label>
+              <select id="pickupWasteType" required>
+                <option value="paddy_husk">Paddy Husk & Straw</option>
+                <option value="corn_stalk">Corn Stalks</option>
+                <option value="sugarcane_bagasse">Sugarcane Bagasse</option>
+                <option value="cotton_stalk">Cotton Stalks</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="pickupQuantity">Quantity (Tons)</label>
+              <input type="number" id="pickupQuantity" placeholder="e.g. 5" required>
+            </div>
+            <div class="form-group">
+              <label for="pickupDate">Preferred Pickup Date</label>
+              <input type="date" id="pickupDate" required>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg" style="width:100%; margin-top:1rem;">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h2a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H6"/><circle cx="8" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></svg>
+            Schedule Pickup
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Farmer Crop Waste Selling Form -->
+  <section id="sell-waste" class="section section-alt reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="section_form_tag">Farmer Secondary Revenue</span>
+        <h2 class="section-title" data-i18n="section_form_title">List Your Crop Waste for Secondary Income</h2>
+        <p class="section-subtitle" data-i18n="section_form_desc">
+          Are you a farmer with leftover paddy straw, rice husk, or corn stalks? Submit your details below to get purchase offers directly from bioplastic and tableware manufacturers.
+        </p>
+      </div>
+
+      <div class="form-card">
+        <form id="farmerWasteForm">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="farmerName" data-i18n="lbl_farmer_name">Farmer Name</label>
+              <input type="text" id="farmerName" placeholder="e.g. Venkatrao" required>
+            </div>
+            <div class="form-group">
+              <label for="farmerPhone" data-i18n="lbl_phone">Phone Number</label>
+              <input type="tel" id="farmerPhone" placeholder="e.g. +91 98765 43210" required>
+            </div>
+            <div class="form-group">
+              <label for="farmerDistrict" data-i18n="lbl_district">District / Village</label>
+              <input type="text" id="farmerDistrict" placeholder="e.g. Palnadu / Narasaraopet" required>
+            </div>
+            <div class="form-group">
+              <label for="wasteType" data-i18n="lbl_waste_type">Crop Waste Type</label>
+              <select id="wasteType" required>
+                <option value="paddy_husk">Paddy Husk & Straw</option>
+                <option value="corn_stalk">Corn Starch & Stalks</option>
+                <option value="sugarcane_bagasse">Sugarcane Bagasse</option>
+                <option value="areca_sheath">Areca Palm Sheaths</option>
+                <option value="other">Other Agricultural Residue</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="quantity" data-i18n="lbl_quantity">Quantity Available (Tons/Quintals)</label>
+              <input type="text" id="quantity" placeholder="e.g. 25 Tons" required>
+            </div>
+            <div class="form-group">
+              <label for="price" data-i18n="lbl_price">Expected Price per Ton (₹)</label>
+              <input type="number" id="price" placeholder="e.g. 1500" required>
+            </div>
+          </div>
+          <div class="form-group" style="margin-bottom: 1.5rem;">
+            <label for="notes" data-i18n="lbl_notes">Additional Notes / Harvest Date</label>
+            <textarea id="notes" rows="3" placeholder="Specify harvest completion date and transport readiness..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; font-size: 1.15rem;" data-i18n="btn_submit_waste">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Submit Crop Waste Listing
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="faq-section reveal">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-i18n="section_faq_tag">Frequently Asked Questions</span>
+        <h2 class="section-title" data-i18n="section_faq_title">Common Questions from Farmers</h2>
+        <p class="section-subtitle" data-i18n="section_faq_desc">Everything you need to know about using Gen Z TS to sell produce and crop waste.</p>
+      </div>
+      <div class="faq-list" id="faqList">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="faq_q1">Is there any fee to register on Gen Z TS?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner" data-i18n="faq_a1">No, Gen Z TS is completely free for farmers. There are zero registration fees and zero commission charges. Our mission is to empower farmers, not profit from them.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="faq_q2">How do I sell my crop waste through this platform?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner" data-i18n="faq_a2">Simply scroll to the "Sell Your Waste" section, fill in your details including waste type and quantity, and submit. Verified recycling companies will contact you directly with purchase offers.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="faq_q3">Which types of crop waste can I sell?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner" data-i18n="faq_a3">You can sell paddy husk & straw, corn stalks & starch, sugarcane bagasse, areca palm sheaths, and other agricultural residue. These are converted into eco-friendly plates, bags, bottles, and textiles.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="faq_q4">Is the platform available in my language?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner" data-i18n="faq_a4">Yes! Gen Z TS supports 6 languages: English, Telugu (తెలుగు), Hindi (हिंदी), Tamil (தமிழ்), Malayalam (മലയാളം), and Kannada (ಕನ್ನಡ). Use the language selector in the top menu to switch.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span data-i18n="faq_q5">How much extra income can I earn from crop waste?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner" data-i18n="faq_a5">Farmers typically earn ₹10,000–₹15,000+ additional revenue per acre per season by selling crop waste that would otherwise be burned. The exact amount depends on waste type, quantity, and buyer demand.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>What biodegradable products are made from crop waste?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Crop waste is converted into biodegradable plates, bowls, cutlery, carry bags, grocery bags, coffee cups, bio-bottles, textiles/fabrics, mulch films, biomass pellets, and eco-composites. Each waste type has unique product applications.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>How does the bidding system work?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Farmers list their available crop waste with quantity and expected price. Verified buyers can browse listings and place competitive bids. The farmer can accept the best bid and connect directly with the buyer — no middlemen involved.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            <span>Can I schedule a waste pickup from my farm?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">Yes! Use our Waste Collection & Pickup section to schedule a pickup. Fill in your address, waste type, quantity, and preferred date. Our partnered logistics network will arrange collection from your farm gate.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Contact Modal -->
+  <div id="contactModal" class="modal-overlay">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <div id="modalBodyContent">
+        <!-- Filled dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Success Toast -->
+  <div class="toast" id="successToast">
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle; margin-right:0.5rem;"><polyline points="20 6 9 17 4 12"/></svg>
+    <span id="toastMessage">Submitted successfully!</span>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      
+      <div class="footer-col">
+        <h3>Gen Z TS (Tech Solutions)</h3>
+        <p>
+          Empowering farmers with cutting-edge agricultural tech, direct buyer connectivity, and crop-waste-to-wealth monetisation. Building a sustainable future for rural India.
+        </p>
+        <p style="margin-top:1rem; font-style:italic; font-size:0.85rem; opacity:0.8;">
+          "Let Us Build a Nation Free from Pollution by Replacing Harmful Plastic with Sustainable, Biodegradable Products."
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Quick Navigation</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#farmer-dashboard">Farmer Dashboard</a></li>
+          <li><a href="#marketplace">Produce Marketplace</a></li>
+          <li><a href="#buyer-directory">Buyer Directory</a></li>
+          <li><a href="#tools-calculators">Tools & Calculators</a></li>
+          <li><a href="#waste-products">Crop Waste Products</a></li>
+          <li><a href="#recyclers-directory">AP Recycler Companies</a></li>
+          <li><a href="#sell-waste">Sell Waste Portal</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Supported Languages</h3>
+        <p>Telugu (తెలుగు) • Hindi (हिंदी) • Tamil (தமிழ்) • Malayalam (മലയാളം) • Kannada (ಕನ್ನಡ) • English</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>AP & TS Bio-Processing Network</h3>
+        <p>Integrated with verified Andhra Pradesh & Telangana agricultural-waste processing enterprise data. 25+ companies across both states ready to buy your crop waste.</p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Gen Z TS (Tech Solutions). All Rights Reserved. Built for Indian Farmers.</p>
+    </div>
+    </div>
+  </footer>
+  </div> <!-- End Main Site Content -->
+
+  <!-- AI Assistant (Chat & Voice) -->
+  <button class="ai-fab" id="aiFab" aria-label="AI Assistant">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+  </button>
+
+  <div class="ai-panel" id="aiPanel">
+    <div class="ai-header">
+      <div class="ai-title">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"></path><rect width="16" height="12" x="4" y="8" rx="2"></rect><path d="M2 14h2"></path><path d="M20 14h2"></path><path d="M15 13v2"></path><path d="M9 13v2"></path></svg>
+        <span>Gen Z TS Assistant</span>
+      </div>
+      <button class="ai-close" id="aiClose">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+    <div class="ai-messages" id="aiMessages">
+      <div class="ai-msg bot">
+        <div class="msg-bubble">Hello! I am Gen Z TS AI Assistant. I can help you with:
+          <br><i data-feather="wind" style="width: 1em; height: 1em; vertical-align: middle;"></i> Finding buyers for your crops
+          <br><i data-feather="refresh-cw" style="width: 1em; height: 1em; vertical-align: middle;"></i> Connecting with waste recyclers
+          <br><i data-feather="dollar-sign" style="width: 1em; height: 1em; vertical-align: middle;"></i> Calculating waste income
+          <br><i data-feather="globe" style="width: 1em; height: 1em; vertical-align: middle;"></i> Tracking your carbon savings
+          <br><i data-feather="camera" style="width: 1em; height: 1em; vertical-align: middle;"></i> Identifying waste types
+          <br>Try the quick actions below! 👇</div>
+      </div>
+    </div>
+    <!-- Quick Action Chips -->
+    <div class="ai-quick-chips" id="aiQuickChips">
+      <button class="ai-chip" data-query="find buyers">🏪 Find Buyers</button>
+      <button class="ai-chip" data-query="calculate income"><i data-feather="dollar-sign" style="width: 1em; height: 1em; vertical-align: middle;"></i> Calc Income</button>
+      <button class="ai-chip" data-query="carbon footprint"><i data-feather="globe" style="width: 1em; height: 1em; vertical-align: middle;"></i> Carbon Track</button>
+      <button class="ai-chip" data-query="waste products"><i data-feather="refresh-cw" style="width: 1em; height: 1em; vertical-align: middle;"></i> Products</button>
+      <button class="ai-chip" data-query="schedule pickup"><i data-feather="truck" style="width: 1em; height: 1em; vertical-align: middle;"></i> Pickup</button>
+      <button class="ai-chip" data-query="pollution impact"><i data-feather="truck" style="width: 1em; height: 1em; vertical-align: middle;"></i> Pollution</button>
+      <button class="ai-chip" data-query="biodegradable"><i data-feather="wind" style="width: 1em; height: 1em; vertical-align: middle;"></i> Eco Hub</button>
+      <button class="ai-chip" data-query="market prices"><i data-feather="bar-chart" style="width: 1em; height: 1em; vertical-align: middle;"></i> Prices</button>
+    </div>
+    <div class="ai-input-area">
+      <input type="text" id="aiInput" placeholder="Type or speak...">
+      <button class="ai-voice-btn" id="aiVoiceBtn" aria-label="Voice Input">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="22"></line></svg>
+      </button>
+      <button class="ai-send-btn" id="aiSend" aria-label="Send">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+      </button>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="app.js"></script>
+</body>
+</html>
