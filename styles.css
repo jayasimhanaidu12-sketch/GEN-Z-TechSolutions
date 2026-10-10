@@ -993,3 +993,14 @@ body.dark-mode .site-footer { background: #071A0D; }
 .waste-rec-card:hover .waste-rec-img {
   transform: scale(1.05);
 }
+
+
+/* Ensure SVG generated icons and illustrations display cleanly */
+svg.hero-bg-img,
+svg.showcase-img,
+svg.produce-img,
+svg.product-img,
+svg.waste-rec-img {
+  display: block;
+  width: 100%;
+}
